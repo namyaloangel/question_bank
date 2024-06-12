@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Question Bank System</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/auth.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <button id="addQuiz">Add Quiz</button>
+        </aside>
+        <main>
+            <section id="quizzes">
+                <h2>Available Quizzes</h2>
+                <div class="exam-list" id="quizList">
+                    <!-- Quizzes will be loaded here -->
+                </div>
+            </section>
+            <section id="student-results">
+                <h2>Student Results</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Quiz</th>
+                            <th>Score</th>
+                            <th>Passing Probability</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsTable">
+                        <!-- Results will be loaded here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Question Bank System</p>
+    </footer>
+    <script src="/admin.js"></script>
+</body>
+</html>
